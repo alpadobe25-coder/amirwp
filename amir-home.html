@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Amir Ali Rafiee | AI Ethics &amp; Autonomous Vehicles Researcher | Sydney</title>
+<meta name="description" content="Sydney-based researcher in AI ethics and governance. Expert in ethical decision-making for autonomous vehicles. PhD Griffith University. 4 peer-reviewed publications.">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'IBM Plex Sans',sans-serif;
+  background:#080C14;
+  color:#E8EDF5;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+
+:root{
+  --ink:#080C14;
+  --ink2:#0D1221;
+  --ink3:#141B2E;
+  --ink4:#1C2540;
+  --white:#E8EDF5;
+  --white2:#C8D0E0;
+  --grey:#7A8599;
+  --grey2:#3A4560;
+  --gold:#C4A052;
+  --gold2:#DFB96A;
+  --goldlo:rgba(196,160,82,0.08);
+  --goldlo2:rgba(196,160,82,0.15);
+  --teal:#2DD4BF;
+  --radius:6px;
+}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:500;
+  height:72px;display:flex;align-items:center;
+  justify-content:space-between;
+  padding:0 3.5rem;
+  background:rgba(8,12,20,0.97);
+  backdrop-filter:blur(20px);
+  border-bottom:1px solid rgba(196,160,82,0.15);
+}
+.nav-logo{
+  display:flex;align-items:center;gap:1rem;
+}
+.nav-monogram{
+  width:40px;height:40px;border-radius:50%;
+  background:var(--goldlo2);
+  border:1.5px solid rgba(196,160,82,0.3);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Libre Baskerville',serif;
+  font-size:1rem;font-weight:700;
+  color:var(--gold);
+  flex-shrink:0;
+}
+.nav-name{line-height:1.1}
+.nav-name-main{
+  font-family:'Libre Baskerville',serif;
+  font-size:.92rem;font-weight:700;
+  color:var(--white);letter-spacing:.01em;
+  display:block;
+}
+.nav-name-sub{
+  font-family:'IBM Plex Sans',sans-serif;
+  font-size:.52rem;font-weight:400;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--gold);
+  display:block;margin-top:.1rem;
+}
+.nav-links{display:flex;align-items:center;gap:.25rem}
+.nav-links a{
+  font-family:'IBM Plex Sans',sans-serif;
+  font-size:.72rem;font-weight:500;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--grey);
+  padding:.5rem .9rem;border-radius:var(--radius);
+  transition:all .2s;
+}
+.nav-links a:hover,.nav-links a.active{color:var(--white);background:var(--ink3)}
+.nav-links a.active{color:var(--gold)}
+.nav-cta{
+  background:var(--gold)!important;
+  color:var(--ink)!important;
+  font-weight:600!important;
+  border-radius:var(--radius)!important;
+  padding:.5rem 1.4rem!important;
+  letter-spacing:.06em!important;
+}
+.nav-cta:hover{background:var(--gold2)!important}
+
+/* ── SHARED BUTTONS ── */
+.btn{
+  font-family:'IBM Plex Sans',sans-serif;
+  font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  padding:.85rem 2rem;border-radius:var(--radius);
+  display:inline-flex;align-items:center;gap:.5rem;
+  transition:all .22s;border:1.5px solid transparent;
+  cursor:pointer;
+}
+.btn-primary{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.btn-primary:hover{background:transparent;color:var(--gold)}
+.btn-ghost{background:transparent;color:var(--white);border-color:var(--grey2)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+
+/* ── SECTION LABEL ── */
+.sec-label{
+  font-family:'IBM Plex Sans',sans-serif;
+  font-size:.58rem;font-weight:600;letter-spacing:.3em;
+  text-transform:uppercase;color:var(--gold);
+  display:flex;align-items:center;gap:.6rem;
+  margin-bottom:1rem;
+}
+.sec-label::before{content:'';width:14px;height:1.5px;background:var(--gold)}
+
+/* ── FOOTER ── */
+footer{
+  background:var(--ink);
+  border-top:1px solid var(--ink4);
+  padding:4rem 3.5rem 2rem;
+}
+.ft-inner{
+  max-width:1160px;margin:0 auto;
+  display:grid;grid-template-columns:2fr 1fr 1fr 1fr;
+  gap:3rem;padding-bottom:2.5rem;
+  border-bottom:1px solid var(--ink4);
+}
+.ft-brand{
+  font-family:'Libre Baskerville',serif;
+  font-size:1.1rem;font-weight:700;color:var(--white);
+  margin-bottom:.5rem;
+}
+.ft-brand small{
+  display:block;font-family:'IBM Plex Sans',sans-serif;
+  font-size:.52rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--gold);margin-top:.15rem;font-weight:400;
+}
+.ft-desc{font-size:.78rem;line-height:1.85;color:var(--grey);margin-bottom:1.25rem}
+.ft-links-row{display:flex;gap:.75rem;flex-wrap:wrap}
+.ft-link{
+  font-size:.68rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--grey);padding:.3rem .7rem;
+  border:1px solid var(--grey2);border-radius:3px;
+  transition:all .2s;
+}
+.ft-link:hover{color:var(--gold);border-color:var(--gold)}
+.ft-col h5{
+  font-family:'IBM Plex Sans',sans-serif;
+  font-size:.52rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--grey2);margin-bottom:.9rem;
+}
+.ft-col ul{list-style:none}
+.ft-col li{margin-bottom:.4rem}
+.ft-col a{font-size:.78rem;color:var(--grey);transition:color .18s}
+.ft-col a:hover{color:var(--gold)}
+.ft-bottom{
+  max-width:1160px;margin:1.5rem auto 0;
+  display:flex;justify-content:space-between;
+  align-items:center;flex-wrap:wrap;gap:.5rem;
+}
+.ft-bottom p{font-size:.62rem;color:var(--grey2);letter-spacing:.04em}
+.ft-bottom a{color:var(--grey2);transition:color .2s}
+.ft-bottom a:hover{color:var(--gold)}
+
+/* ── SCROLL REVEAL ── */
+.js-ready .rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+.js-ready .rv.vis{opacity:1;transform:none}
+.js-ready .rv-l{opacity:0;transform:translateX(-28px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+.js-ready .rv-l.vis{opacity:1;transform:none}
+.js-ready .rv-r{opacity:0;transform:translateX(28px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+.js-ready .rv-r.vis{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+.d4{transition-delay:.4s}.d5{transition-delay:.5s}.d6{transition-delay:.6s}
+
+/* ── NEURAL CANVAS (hero background) ── */
+#neural-canvas{
+  position:absolute;inset:0;
+  pointer-events:none;z-index:1;
+}
+
+/* ── HERO ── */
+.hero{
+  position:relative;
+  min-height:100svh;
+  padding-top:72px;
+  display:flex;align-items:center;
+  overflow:hidden;
+  background:var(--ink);
+}
+.hero::after{
+  content:'';
+  position:absolute;bottom:0;left:0;right:0;
+  height:180px;
+  background:linear-gradient(to bottom,transparent,var(--ink));
+  z-index:2;pointer-events:none;
+}
+.hero-inner{
+  max-width:1160px;margin:0 auto;
+  padding:4rem 3.5rem;
+  display:grid;grid-template-columns:1fr 420px;
+  gap:5rem;align-items:center;
+  position:relative;z-index:3;
+  width:100%;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:.65rem;
+  font-family:'IBM Plex Sans',sans-serif;
+  font-size:.58rem;font-weight:600;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:1.75rem;
+  opacity:0;animation:fadeUp .7s .2s ease forwards;
+}
+.hero-eyebrow::before{content:'';width:20px;height:1.5px;background:var(--gold)}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+
+.hero h1{
+  font-family:'Libre Baskerville',serif;
+  font-size:clamp(2.8rem,4.5vw,5rem);
+  line-height:1.05;letter-spacing:-.02em;
+  color:var(--white);
+  margin-bottom:1.5rem;
+  opacity:0;animation:fadeUp .8s .35s ease forwards;
+}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero-sub{
+  font-size:1rem;font-weight:300;line-height:1.85;
+  color:var(--grey);max-width:520px;margin-bottom:2.5rem;
+  opacity:0;animation:fadeUp .8s .5s ease forwards;
+}
+.hero-sub strong{color:var(--white2);font-weight:500}
+.hero-actions{
+  display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:2.5rem;
+  opacity:0;animation:fadeUp .8s .65s ease forwards;
+}
+/* Quick stats inline */
+.hero-stats{
+  display:flex;gap:2rem;flex-wrap:wrap;
+  opacity:0;animation:fadeUp .8s .8s ease forwards;
+}
+.hero-stat{
+  display:flex;flex-direction:column;gap:.15rem;
+  padding-left:1rem;
+  border-left:2px solid var(--goldlo2);
+}
+.hero-stat-val{
+  font-family:'Libre Baskerville',serif;
+  font-size:1.5rem;font-weight:700;color:var(--gold);
+  line-height:1;
+}
+.hero-stat-lbl{
+  font-size:.62rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--grey);
+}
+
+/* Profile card */
+.hero-card{
+  background:var(--ink2);
+  border:1px solid var(--ink4);
+  border-radius:12px;
+  overflow:hidden;
+  opacity:0;animation:fadeUp .9s .4s ease forwards;
+  position:relative;
+}
+.hero-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--gold),var(--gold2),transparent);
+}
+.hero-card-img{
+  width:100%;height:300px;overflow:hidden;
+  background:var(--ink3);
+}
+.hero-card-img img{
+  width:100%;height:100%;object-fit:cover;object-position:top center;
+  filter:brightness(.9) saturate(.85);
+  transition:transform 1s cubic-bezier(.16,1,.3,1);
+}
+.hero-card:hover .hero-card-img img{transform:scale(1.04)}
+.hero-card-body{padding:1.5rem}
+.hero-card-name{
+  font-family:'Libre Baskerville',serif;
+  font-size:1.15rem;font-weight:700;color:var(--white);margin-bottom:.2rem;
+}
+.hero-card-title{
+  font-size:.72rem;font-weight:400;color:var(--gold);letter-spacing:.04em;
+  margin-bottom:1rem;line-height:1.5;
+}
+.hero-card-links{display:flex;gap:.5rem}
+.hc-link{
+  font-size:.62rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--grey);padding:.3rem .7rem;
+  border:1px solid var(--grey2);border-radius:3px;
+  transition:all .2s;
+}
+.hc-link:hover{color:var(--gold);border-color:var(--gold)}
+
+/* ── DIVIDER BAND ── */
+.band{
+  background:var(--ink2);
+  border-top:1px solid var(--ink4);
+  border-bottom:1px solid var(--ink4);
+  padding:1.5rem 3.5rem;
+  display:flex;align-items:center;gap:4rem;
+  flex-wrap:wrap;
+  overflow:hidden;
+}
+.band-item{
+  display:flex;align-items:center;gap:.65rem;
+  font-size:.72rem;font-weight:500;letter-spacing:.04em;
+  color:var(--grey);white-space:nowrap;
+}
+.band-item-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0}
+.band-item strong{color:var(--white2);font-weight:600}
+
+/* ── RESEARCH INTERESTS ── */
+.research{
+  padding:7rem 3.5rem;background:var(--ink);
+}
+.research-inner{max-width:1160px;margin:0 auto}
+.research-head{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:4rem;align-items:end;margin-bottom:4rem;
+}
+.research-head h2{
+  font-family:'Libre Baskerville',serif;
+  font-size:clamp(2.2rem,3.5vw,3.5rem);
+  line-height:1.1;color:var(--white);
+  letter-spacing:-.02em;
+}
+.research-head h2 em{font-style:italic;color:var(--gold)}
+.research-head p{font-size:.88rem;line-height:1.95;color:var(--grey)}
+.research-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1px;background:var(--ink4);
+  border:1px solid var(--ink4);border-radius:8px;overflow:hidden;
+}
+.ri-card{
+  background:var(--ink);
+  padding:2.25rem 2rem;
+  position:relative;overflow:hidden;
+  transition:background .3s;
+}
+.ri-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,var(--gold),transparent);
+  transform:scaleX(0);transform-origin:left;
+  transition:transform .4s cubic-bezier(.77,0,.18,1);
+}
+.ri-card:hover::before{transform:scaleX(1)}
+.ri-card:hover{background:var(--ink2)}
+.ri-num{
+  font-family:'Libre Baskerville',serif;font-style:italic;
+  font-size:.75rem;color:var(--gold);opacity:.6;margin-bottom:.75rem;
+}
+.ri-name{
+  font-family:'Libre Baskerville',serif;font-weight:700;
+  font-size:1rem;color:var(--white);margin-bottom:.6rem;line-height:1.3;
+  transition:color .25s;
+}
+.ri-card:hover .ri-name{color:var(--gold)}
+.ri-desc{font-size:.78rem;line-height:1.82;color:var(--grey)}
+
+/* ── PUBLICATIONS ── */
+.pubs{
+  padding:7rem 3.5rem;
+  background:var(--ink2);
+  border-top:1px solid var(--ink4);
+}
+.pubs-inner{max-width:1160px;margin:0 auto}
+.pubs-head{margin-bottom:3.5rem}
+.pubs-head h2{
+  font-family:'Libre Baskerville',serif;
+  font-size:clamp(2rem,3vw,3rem);
+  line-height:1.1;color:var(--white);
+  letter-spacing:-.02em;margin-bottom:.75rem;
+}
+.pubs-head p{font-size:.88rem;color:var(--grey);line-height:1.8;max-width:640px}
+.pub-list{display:flex;flex-direction:column;gap:0}
+.pub-item{
+  border-top:1px solid var(--ink4);
+  padding:2rem 0;
+  display:grid;grid-template-columns:80px 1fr auto;
+  gap:2rem;align-items:start;
+  position:relative;
+}
+.pub-item:last-child{border-bottom:1px solid var(--ink4)}
+.pub-year{
+  font-family:'Libre Baskerville',serif;font-style:italic;
+  font-size:1.1rem;color:var(--gold);line-height:1.3;
+  padding-top:.2rem;
+}
+.pub-content .pub-title{
+  font-family:'Libre Baskerville',serif;font-weight:700;
+  font-size:1.05rem;color:var(--white);margin-bottom:.4rem;
+  line-height:1.4;transition:color .2s;
+}
+.pub-item:hover .pub-title{color:var(--gold)}
+.pub-authors{
+  font-size:.75rem;color:var(--grey);margin-bottom:.35rem;
+  font-style:italic;
+}
+.pub-venue{
+  font-size:.72rem;font-weight:500;letter-spacing:.04em;
+  color:var(--teal);margin-bottom:.75rem;
+}
+.pub-abstract{
+  font-size:.8rem;line-height:1.85;color:var(--grey);
+  max-height:0;overflow:hidden;
+  transition:max-height .5s ease,opacity .4s;opacity:0;
+}
+.pub-item.expanded .pub-abstract{max-height:300px;opacity:1}
+.pub-tags{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.75rem}
+.pub-tag{
+  font-size:.58rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--gold);background:var(--goldlo);border:1px solid rgba(196,160,82,.2);
+  border-radius:3px;padding:.2rem .55rem;
+}
+.pub-toggle{
+  width:36px;height:36px;border-radius:50%;
+  border:1px solid var(--ink4);
+  background:transparent;color:var(--grey);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.85rem;cursor:pointer;
+  transition:all .2s;flex-shrink:0;
+  margin-top:.2rem;
+}
+.pub-toggle:hover{border-color:var(--gold);color:var(--gold)}
+.pub-item.expanded .pub-toggle{
+  background:var(--gold);border-color:var(--gold);color:var(--ink);
+  transform:rotate(45deg);
+}
+
+/* ── THESIS SPOTLIGHT ── */
+.thesis{
+  padding:7rem 3.5rem;background:var(--ink);
+  border-top:1px solid var(--ink4);
+}
+.thesis-inner{
+  max-width:1160px;margin:0 auto;
+  display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;
+}
+.thesis-badge{
+  display:inline-flex;align-items:center;gap:.5rem;
+  background:var(--goldlo);border:1px solid rgba(196,160,82,.2);
+  border-radius:3px;padding:.3rem .8rem;
+  font-size:.6rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:1.5rem;
+}
+.thesis-right h2{
+  font-family:'Libre Baskerville',serif;font-style:italic;
+  font-size:clamp(1.6rem,2.5vw,2.3rem);
+  line-height:1.2;color:var(--white);margin-bottom:1.25rem;
+  letter-spacing:-.01em;
+}
+.thesis-right p{
+  font-size:.88rem;line-height:1.95;color:var(--grey);margin-bottom:.85rem;
+}
+.thesis-right p strong{color:var(--white2);font-weight:500}
+.thesis-meta{
+  display:grid;grid-template-columns:1fr 1fr;gap:1rem;
+  margin-top:2rem;
+  background:var(--ink2);border:1px solid var(--ink4);
+  border-radius:8px;padding:1.5rem;
+}
+.tm-item{display:flex;flex-direction:column;gap:.2rem}
+.tm-lbl{
+  font-size:.55rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--grey2);
+}
+.tm-val{font-size:.82rem;font-weight:500;color:var(--white2)}
+/* Thesis visual panel */
+.thesis-visual{
+  background:var(--ink2);
+  border:1px solid var(--ink4);
+  border-radius:12px;padding:3rem;
+  position:relative;overflow:hidden;
+}
+.thesis-visual::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--gold),var(--gold2),transparent);
+}
+.thesis-title-display{
+  font-family:'Libre Baskerville',serif;font-style:italic;
+  font-size:1.65rem;line-height:1.35;color:var(--white);
+  margin-bottom:2rem;
+}
+.thesis-pillars{display:flex;flex-direction:column;gap:.65rem}
+.thesis-pillar{
+  display:flex;align-items:center;gap:.85rem;
+  padding:.75rem 1rem;
+  background:var(--ink3);border:1px solid var(--ink4);
+  border-radius:5px;
+  transition:border-color .2s;
+}
+.thesis-pillar:hover{border-color:rgba(196,160,82,.3)}
+.tp-icon{font-size:1rem;flex-shrink:0}
+.tp-text{font-size:.78rem;font-weight:500;color:var(--white2)}
+
+/* ── IMPACT ── */
+.impact{
+  padding:7rem 3.5rem;
+  background:linear-gradient(135deg,var(--ink2) 0%,var(--ink3) 100%);
+  border-top:1px solid var(--ink4);
+}
+.impact-inner{max-width:1160px;margin:0 auto}
+.impact-head{text-align:center;margin-bottom:4rem}
+.impact-head h2{
+  font-family:'Libre Baskerville',serif;
+  font-size:clamp(2rem,3vw,3rem);
+  line-height:1.1;color:var(--white);margin-bottom:.75rem;
+}
+.impact-head h2 em{font-style:italic;color:var(--gold)}
+.impact-head p{font-size:.88rem;color:var(--grey);max-width:580px;margin:0 auto;line-height:1.8}
+.principles-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:1.5rem;margin-bottom:4rem;
+}
+.principle{
+  background:var(--ink);
+  border:1px solid var(--ink4);
+  border-radius:8px;
+  padding:1.75rem;
+  position:relative;overflow:hidden;
+  text-align:center;
+  transition:border-color .3s,transform .3s;
+}
+.principle:hover{
+  border-color:rgba(196,160,82,.3);
+  transform:translateY(-3px);
+}
+.principle::before{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:2px;
+  background:var(--gold);transform:scaleX(0);transform-origin:center;
+  transition:transform .4s;
+}
+.principle:hover::before{transform:scaleX(1)}
+.p-code{
+  font-family:'Libre Baskerville',serif;font-weight:700;font-style:italic;
+  font-size:1.5rem;color:var(--gold);margin-bottom:.5rem;
+}
+.p-name{
+  font-family:'IBM Plex Sans',sans-serif;font-weight:600;
+  font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--white2);margin-bottom:.65rem;
+}
+.p-desc{font-size:.75rem;line-height:1.8;color:var(--grey)}
+
+/* Recs */
+.recs{
+  background:var(--ink);border:1px solid var(--ink4);
+  border-radius:8px;padding:2.5rem;
+}
+.recs h3{
+  font-family:'Libre Baskerville',serif;font-weight:700;
+  font-size:1.3rem;color:var(--white);margin-bottom:1.5rem;
+}
+.recs-list{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:.75rem;list-style:none;
+}
+.recs-item{
+  display:flex;align-items:flex-start;gap:.75rem;
+  font-size:.82rem;line-height:1.75;color:var(--grey);
+  padding:.75rem 1rem;
+  background:var(--ink2);border:1px solid var(--ink4);
+  border-radius:5px;
+}
+.recs-item::before{content:'→';color:var(--gold);flex-shrink:0;font-weight:700}
+
+/* ── COLLAB CTA ── */
+.collab{
+  padding:7rem 3.5rem;
+  background:var(--ink2);
+  border-top:1px solid var(--ink4);
+  text-align:center;
+}
+.collab-inner{max-width:720px;margin:0 auto}
+.collab h2{
+  font-family:'Libre Baskerville',serif;
+  font-size:clamp(2.2rem,3.5vw,3.8rem);
+  line-height:1.1;color:var(--white);margin-bottom:1.25rem;
+}
+.collab h2 em{font-style:italic;color:var(--gold)}
+.collab p{font-size:.95rem;line-height:1.9;color:var(--grey);margin-bottom:2rem}
+.collab-actions{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .hero-inner{grid-template-columns:1fr;gap:3rem}
+  .hero-card{max-width:420px}
+  .research-head{grid-template-columns:1fr;gap:2rem}
+  .research-grid{grid-template-columns:1fr 1fr}
+  .thesis-inner{grid-template-columns:1fr;gap:3rem}
+  .principles-grid{grid-template-columns:1fr 1fr}
+  .recs-list{grid-template-columns:1fr}
+  .ft-inner{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  nav{padding:0 1.25rem}
+  .nav-links a:not(.nav-cta){display:none}
+  .hero-inner,.research,.pubs,.thesis,.impact,.collab{padding-left:1.5rem;padding-right:1.5rem}
+  .hero-inner{padding-top:5rem}
+  .band{padding:1.25rem 1.5rem;gap:1.5rem}
+  .hero h1{font-size:clamp(2.2rem,8vw,3.5rem)}
+  .research-grid{grid-template-columns:1fr}
+  .pub-item{grid-template-columns:50px 1fr auto;gap:1rem}
+  .principles-grid{grid-template-columns:1fr 1fr;gap:1rem}
+  .ft-inner{grid-template-columns:1fr}
+  footer{padding:3rem 1.5rem 1.5rem}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <div class="nav-monogram">AR</div>
+    <div class="nav-name">
+      <span class="nav-name-main">Dr. Amir Rafiee</span>
+      <span class="nav-name-sub">AI Ethics Researcher</span>
+    </div>
+  </div>
+  <div class="nav-links">
+    <a href="amir-home.html" class="active">Home</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="amir-about.html">About</a>
+    <a href="amir-contact.html" class="nav-cta">Contact</a>
+  </div>
+</nav>
+
+<canvas id="neural-canvas"></canvas>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-eyebrow">Sydney, Australia · Griffith University · Telstra</div>
+      <h1>Shaping the<br><em>Moral Future</em><br>of Autonomous AI.</h1>
+      <p class="hero-sub">
+        Dr. Amir Ali Rafiee, PhD, researches how <strong>ethical theory, public expectations, and smart policy</strong> can guide autonomous vehicles through life-or-death decisions — building AI systems that Australians can trust.
+      </p>
+      <div class="hero-actions">
+        <a href="#research" class="btn btn-primary">Explore Research</a>
+        <a href="#publications" class="btn btn-ghost">View Publications</a>
+        <a href="amir-contact.html" class="btn btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-val">PhD</div>
+          <div class="hero-stat-lbl">Philosophy · Griffith</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-val">4</div>
+          <div class="hero-stat-lbl">Peer-Reviewed Pubs</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-val">8+</div>
+          <div class="hero-stat-lbl">Google Scholar Citations</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-val">3×</div>
+          <div class="hero-stat-lbl">ICAART Presenter</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-card">
+        <div class="hero-card-img">
+          <img src="https://amirrafieecomau.wordpress.com/wp-content/uploads/2026/03/aq2-2.jpg" alt="Dr. Amir Ali Rafiee"/>
+        </div>
+        <div class="hero-card-body">
+          <div class="hero-card-name">Dr. Amir Ali Rafiee</div>
+          <div class="hero-card-title">Independent Researcher · AI Ethics &amp; Governance<br>Process Performance &amp; Analytics, Telstra</div>
+          <div class="hero-card-links">
+            <a href="https://scholar.google.com/citations?user=zBHjLMwAAAAJ" target="_blank" class="hc-link">Google Scholar</a>
+            <a href="https://www.linkedin.com/in/amir-rafiee-phd-82805857" target="_blank" class="hc-link">LinkedIn</a>
+            <a href="https://orcid.org/0000-0002-8149-4780" target="_blank" class="hc-link">ORCID</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BAND -->
+<div class="band">
+  <div class="band-item"><div class="band-item-dot"></div><span>ICAART <strong>2024 · 2025 · 2026</strong></span></div>
+  <div class="band-item"><div class="band-item-dot"></div><span>CEPE <strong>2023</strong></span></div>
+  <div class="band-item"><div class="band-item-dot"></div><span>Emerald Publishing <strong>Vol. 27</strong></span></div>
+  <div class="band-item"><div class="band-item-dot"></div><span>Griffith University <strong>ICT · Ethics · Governance</strong></span></div>
+  <div class="band-item"><div class="band-item-dot"></div><span>ORCID <strong>0000-0002-8149-4780</strong></span></div>
+</div>
+
+<!-- RESEARCH INTERESTS -->
+<section class="research" id="research">
+  <div class="research-inner">
+    <div class="research-head">
+      <div>
+        <div class="sec-label rv">Research Interests</div>
+        <h2 class="rv d1">Ethics at the<br>Heart of <em>AI Design.</em></h2>
+      </div>
+      <p class="rv d2">Bridging philosophy, law, technology, and public policy to answer one critical question: How should autonomous systems make moral choices that align with Australian values?</p>
+    </div>
+    <div class="research-grid">
+      <div class="ri-card rv">
+        <div class="ri-num">01</div>
+        <div class="ri-name">Ethical Decision-Making in Autonomous Vehicles</div>
+        <div class="ri-desc">Designing moral algorithms that balance harm minimisation, legal compliance, and public acceptability in unavoidable crash scenarios.</div>
+      </div>
+      <div class="ri-card rv d1">
+        <div class="ri-num">02</div>
+        <div class="ri-name">Public Perception &amp; Social Licence</div>
+        <div class="ri-desc">Using Australian surveys to understand what citizens expect from self-driving cars facing life-or-death ethical dilemmas.</div>
+      </div>
+      <div class="ri-card rv d2">
+        <div class="ri-num">03</div>
+        <div class="ri-name">AI Policy &amp; Regulation</div>
+        <div class="ri-desc">Critiquing and improving national frameworks — including Australia's National Transport Commission safety assurance processes.</div>
+      </div>
+      <div class="ri-card rv d3">
+        <div class="ri-num">04</div>
+        <div class="ri-name">Philosophical Foundations</div>
+        <div class="ri-desc">Evaluating utilitarianism, deontology, Rawlsian justice, and hybrid approaches for machine autonomy in morally complex environments.</div>
+      </div>
+      <div class="ri-card rv d4">
+        <div class="ri-num">05</div>
+        <div class="ri-name">Responsible AI Design</div>
+        <div class="ri-desc">"Ethics by Design" principles that embed transparency, accountability, and fairness into autonomous systems from inception.</div>
+      </div>
+      <div class="ri-card rv d5">
+        <div class="ri-num">06</div>
+        <div class="ri-name">Safety–Ethics Integration</div>
+        <div class="ri-desc">Demonstrating that true safety assurance must include ethical criteria — not treat them as optional add-ons to technical compliance.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section class="pubs" id="publications">
+  <div class="pubs-inner">
+    <div class="pubs-head rv">
+      <div class="sec-label">Publications</div>
+      <h2>Peer-Reviewed Research</h2>
+      <p>Four published works across leading AI ethics and philosophy conferences and journals (2023–2025), with a fifth presentation at ICAART 2026.</p>
+    </div>
+
+    <div class="pub-list">
+
+      <div class="pub-item rv" id="pub1">
+        <div class="pub-year">2025</div>
+        <div class="pub-content">
+          <div class="pub-title">Ethics of Autonomous Vehicles: Australians' Expectations and Moral Preferences</div>
+          <div class="pub-authors">Amir Rafiee</div>
+          <div class="pub-venue">ICAART 2025 — Proceedings of the 17th International Conference on Agents and Artificial Intelligence, pp. 287–297 · DOI: 10.5220/0013123900003890</div>
+          <div class="pub-abstract">
+            This landmark study surveyed Australians on six realistic ethical dilemma scenarios for personal autonomous vehicles. By excluding discriminatory factors (age, gender, etc.) and incorporating legal context, the research produced four clear, actionable principles: Injury Over Sacrifice (IOS) — preferring injury over death where a choice exists; Harm Confinement and Lawfulness (HCL) — confining harm to those who broke the rules; Harm Prevention and Prioritisation (HPP) — avoiding actively causing death when possible; and Objective Decision System (ODS) — using random selection when multiple justified outcomes exist. The findings shift AV ethics away from pure utilitarianism toward a deontological, rule-based framework with built-in moral safeguards that policymakers and manufacturers can implement immediately.
+          </div>
+          <div class="pub-tags">
+            <span class="pub-tag">IOS Principle</span>
+            <span class="pub-tag">HCL Principle</span>
+            <span class="pub-tag">HPP Principle</span>
+            <span class="pub-tag">ODS Principle</span>
+            <span class="pub-tag">Open Access PDF</span>
+          </div>
+        </div>
+        <button class="pub-toggle" onclick="togglePub('pub1')">+</button>
+      </div>
+
+      <div class="pub-item rv d1" id="pub2">
+        <div class="pub-year">2024</div>
+        <div class="pub-content">
+          <div class="pub-title">Government's Response to Ethical Dilemmas in Autonomous Vehicle Accidents: An Australian Policy Evaluation</div>
+          <div class="pub-authors">Amir Rafiee, Hugh Breakey, Yong Wu &amp; Abdul Sattar</div>
+          <div class="pub-venue">ICAART 2024 — Proceedings of the 16th International Conference on Agents and Artificial Intelligence, pp. 1152–1161 · DOI: 10.5220/0012451200003636</div>
+          <div class="pub-abstract">
+            A detailed critique of Australia's National Transport Commission 2018 Decision Regulation Impact Statement, which assessed safety assurance for Automated Driving Systems but explicitly excluded ethical considerations. The paper argues that safety and ethics are inseparable — you cannot claim a system is "safe" if it makes morally unacceptable choices in unavoidable crashes. The authors demonstrate how current safety criteria (Safe System Design, Operational Design Domain, Minimal Risk Condition) fail in ethical dilemmas, critique the reliance on the "Swedish solution," and recommend mandatory inclusion of ethical criteria in future regulation, public education campaigns, and transparent stakeholder dialogue.
+          </div>
+          <div class="pub-tags">
+            <span class="pub-tag">Policy Analysis</span>
+            <span class="pub-tag">NTC DRIS Critique</span>
+            <span class="pub-tag">AV Regulation</span>
+            <span class="pub-tag">Australian Policy</span>
+          </div>
+        </div>
+        <button class="pub-toggle" onclick="togglePub('pub2')">+</button>
+      </div>
+
+      <div class="pub-item rv d2" id="pub3">
+        <div class="pub-year">2023</div>
+        <div class="pub-content">
+          <div class="pub-title">People's Perception and Expectation of Moral Settings in Autonomous Vehicles: An Australian Case</div>
+          <div class="pub-authors">Amir Rafiee, Hugh Breakey, Yong Wu &amp; Abdul Sattar</div>
+          <div class="pub-venue">CEPE 2023 — International Conference on Computer Ethics · Griffith Repository: Full PDF available</div>
+          <div class="pub-abstract">
+            The first Australian survey on AV moral programming — revealing what citizens expect before widespread deployment and highlighting the significant gap between theoretical ethics and real Australian values. This ground-breaking public-perception data directly informed the practical principles developed in the 2025 ICAART paper. The study establishes a baseline for understanding social licence for autonomous vehicle deployment in the Australian context.
+          </div>
+          <div class="pub-tags">
+            <span class="pub-tag">Australian Survey</span>
+            <span class="pub-tag">Social Licence</span>
+            <span class="pub-tag">Public Perception</span>
+            <span class="pub-tag">CEPE 2023</span>
+          </div>
+        </div>
+        <button class="pub-toggle" onclick="togglePub('pub3')">+</button>
+      </div>
+
+      <div class="pub-item rv d3" id="pub4">
+        <div class="pub-year">2023</div>
+        <div class="pub-content">
+          <div class="pub-title">Philosophical and Legal Approach to Moral Settings in Autonomous Vehicles: An Evaluation</div>
+          <div class="pub-authors">Amir Rafiee, Yong Wu &amp; Abdul Sattar</div>
+          <div class="pub-venue">Social Licence and Ethical Practice, Vol. 27, pp. 95–114 · Emerald Publishing · Cited by 8</div>
+          <div class="pub-abstract">
+            A comprehensive philosophical and legal evaluation comparing utilitarianism, deontological ethics, and Rawlsian justice as frameworks for programming self-driving car decision-making. The paper evaluates the real-world strengths and limitations of each approach for legal and policy application, providing a rigorous theoretical foundation for the empirical survey work that followed. Published by Emerald Publishing with 8 citations — the most-cited work in the series.
+          </div>
+          <div class="pub-tags">
+            <span class="pub-tag">Emerald Publishing</span>
+            <span class="pub-tag">Utilitarianism</span>
+            <span class="pub-tag">Deontology</span>
+            <span class="pub-tag">Rawlsian Justice</span>
+            <span class="pub-tag">8 Citations</span>
+          </div>
+        </div>
+        <button class="pub-toggle" onclick="togglePub('pub4')">+</button>
+      </div>
+
+      <!-- Upcoming -->
+      <div class="pub-item rv d4" style="opacity:.65">
+        <div class="pub-year" style="color:var(--grey)">2026</div>
+        <div class="pub-content">
+          <div class="pub-title" style="color:var(--grey)">Assessing Moral Frameworks for Autonomous Vehicle Decision-Making</div>
+          <div class="pub-authors">Amir Rafiee</div>
+          <div class="pub-venue" style="color:var(--grey2)">ICAART 2026 — Forthcoming Presentation</div>
+          <div class="pub-tags"><span class="pub-tag" style="opacity:.5">Upcoming</span></div>
+        </div>
+        <button class="pub-toggle" style="cursor:default;opacity:.3">→</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- THESIS SPOTLIGHT -->
+<section class="thesis" id="thesis">
+  <div class="thesis-inner">
+    <div class="thesis-visual rv-l">
+      <div class="thesis-badge">📚 PhD Thesis Spotlight</div>
+      <div class="thesis-title-display">"Ethics by Design: Shaping the Moral Compass of Autonomous Vehicles in Australia"</div>
+      <div class="thesis-pillars">
+        <div class="thesis-pillar"><span class="tp-icon">🔬</span><span class="tp-text">Philosophical Analysis of Moral Frameworks</span></div>
+        <div class="thesis-pillar"><span class="tp-icon">📊</span><span class="tp-text">Australian Public Survey Research</span></div>
+        <div class="thesis-pillar"><span class="tp-icon">⚖️</span><span class="tp-text">National Policy Evaluation &amp; Critique</span></div>
+        <div class="thesis-pillar"><span class="tp-icon">🏗️</span><span class="tp-text">Practical Framework for Industry &amp; Regulators</span></div>
+        <div class="thesis-pillar"><span class="tp-icon">🇦🇺</span><span class="tp-text">Australia-First Regulatory Roadmap</span></div>
+      </div>
+    </div>
+    <div class="thesis-right rv-r">
+      <div class="thesis-badge">Completed 2020–2024</div>
+      <h2>"The best AI is not the smartest — it's the one that reflects our shared humanity."</h2>
+      <p>This thesis developed a comprehensive Australian framework for embedding ethics into autonomous vehicle design from day one. Combining rigorous philosophical analysis, public perception surveys, and policy evaluation, it offers regulators and industry a <strong>practical roadmap</strong> to create vehicles that are not only intelligent but also morally responsible.</p>
+      <p>Supervised by <strong>Prof. Hugh Breakey</strong> (Institute for Ethics, Governance and Law), the research was conducted at Griffith University's School of Information and Communication Technology, with affiliations to the Griffith Business School and Institute for Integrated and Intelligent Systems.</p>
+      <div class="thesis-meta">
+        <div class="tm-item"><span class="tm-lbl">Degree</span><span class="tm-val">PhD, Philosophy (interdisciplinary ICT)</span></div>
+        <div class="tm-item"><span class="tm-lbl">Institution</span><span class="tm-val">Griffith University, Australia</span></div>
+        <div class="tm-item"><span class="tm-lbl">Supervisor</span><span class="tm-val">Prof. Hugh Breakey</span></div>
+        <div class="tm-item"><span class="tm-lbl">Duration</span><span class="tm-val">2020–2024 (completed)</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT &amp; PRINCIPLES -->
+<section class="impact" id="impact">
+  <div class="impact-inner">
+    <div class="impact-head rv">
+      <div class="sec-label" style="justify-content:center">Policy Principles</div>
+      <h2>Four <em>Principles</em> for Australian AV Ethics</h2>
+      <p>Derived from Australian survey data and philosophical analysis — ready for implementation in national regulation and manufacturer design codes today.</p>
+    </div>
+    <div class="principles-grid">
+      <div class="principle rv">
+        <div class="p-code">IOS</div>
+        <div class="p-name">Injury Over Sacrifice</div>
+        <div class="p-desc">Prefer injuring rather than killing when a choice exists — minimising fatalities while respecting the duty not to actively kill.</div>
+      </div>
+      <div class="principle rv d1">
+        <div class="p-code">HCL</div>
+        <div class="p-name">Harm Confinement &amp; Lawfulness</div>
+        <div class="p-desc">Confine harm to those who broke the rules (e.g., jaywalkers), even when this means saving fewer lives overall.</div>
+      </div>
+      <div class="principle rv d2">
+        <div class="p-code">HPP</div>
+        <div class="p-name">Harm Prevention &amp; Prioritisation</div>
+        <div class="p-desc">Avoid actively causing death when possible — passive outcomes are preferred over active harm, reflecting deontological values.</div>
+      </div>
+      <div class="principle rv d3">
+        <div class="p-code">ODS</div>
+        <div class="p-name">Objective Decision System</div>
+        <div class="p-desc">When multiple justified outcomes exist, random selection provides fairness, transparency, and simplicity — especially for early AV deployment.</div>
+      </div>
+    </div>
+    <div class="recs rv">
+      <h3>Policy Recommendations</h3>
+      <ul class="recs-list">
+        <li class="recs-item">Integrate IOS, HCL, HPP and ODS into Australia's national AV safety standards</li>
+        <li class="recs-item">Make ethical criteria mandatory in all future Decision Regulation Impact Statements</li>
+        <li class="recs-item">Launch public education campaigns explaining how AVs will handle dilemmas</li>
+        <li class="recs-item">Pilot transparent "ethical black-box" logging so Australians understand post-incident decisions</li>
+        <li class="recs-item">Establish mandatory stakeholder dialogue between ethicists, manufacturers and regulators</li>
+        <li class="recs-item">Develop SSEG-equivalent ethical compliance certification for AV approval processes</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- COLLAB CTA -->
+<section class="collab">
+  <div class="collab-inner rv">
+    <div class="sec-label" style="justify-content:center">Collaboration</div>
+    <h2>Ready to Build<br><em>Ethical AI</em> Together?</h2>
+    <p>"Ready to collaborate on responsible AI? Let's talk about building ethical autonomous systems that Australians can trust." — Amir Rafiee, PhD</p>
+    <div class="collab-actions">
+      <a href="amir-contact.html" class="btn btn-primary">Get in Touch</a>
+      <a href="amir-about.html" class="btn btn-ghost">Read Full Bio</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-inner">
+    <div>
+      <div class="ft-brand">Dr. Amir Ali Rafiee <small>AI Ethics &amp; Governance Researcher</small></div>
+      <p class="ft-desc">Sydney-based researcher exploring how ethical theory, public expectations, and smart policy can guide autonomous vehicles through life-or-death decisions.</p>
+      <div class="ft-links-row">
+        <a href="https://scholar.google.com/citations?user=zBHjLMwAAAAJ" target="_blank" class="ft-link">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/amir-rafiee-phd-82805857" target="_blank" class="ft-link">LinkedIn</a>
+        <a href="https://orcid.org/0000-0002-8149-4780" target="_blank" class="ft-link">ORCID</a>
+        <a href="https://amirrafiee.com.au" class="ft-link">amirrafiee.com.au</a>
+      </div>
+    </div>
+    <div class="ft-col">
+      <h5>Research</h5>
+      <ul>
+        <li><a href="#research">Research Interests</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#thesis">PhD Thesis</a></li>
+        <li><a href="#impact">Policy Principles</a></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h5>Conferences</h5>
+      <ul>
+        <li><a href="#">ICAART 2026</a></li>
+        <li><a href="#">ICAART 2025</a></li>
+        <li><a href="#">ICAART 2024</a></li>
+        <li><a href="#">CEPE 2023</a></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h5>Navigation</h5>
+      <ul>
+        <li><a href="amir-home.html">Home</a></li>
+        <li><a href="amir-about.html">About</a></li>
+        <li><a href="amir-contact.html">Contact</a></li>
+        <li><a href="mailto:info@amirrafiee.com.au">Email</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <p>© 2026 Amir Ali Rafiee, PhD · Sydney, Australia</p>
+    <p>Built for responsible AI · <a href="mailto:info@amirrafiee.com.au">info@amirrafiee.com.au</a></p>
+  </div>
+</footer>
+
+<script>
+document.body.classList.add('js-ready');
+
+// ── NEURAL NETWORK CANVAS ──
+(function(){
+  const canvas = document.getElementById('neural-canvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  let W, H, nodes = [];
+
+  function resize(){
+    W = canvas.width = window.innerWidth;
+    H = canvas.height = document.querySelector('.hero').offsetHeight;
+    canvas.style.position = 'absolute';
+    canvas.style.top = '0';
+    canvas.style.left = '0';
+    canvas.style.zIndex = '1';
+    canvas.style.pointerEvents = 'none';
+  }
+  resize();
+  window.addEventListener('resize', ()=>{ resize(); initNodes(); });
+
+  function initNodes(){
+    nodes = [];
+    const count = Math.floor(W * H / 14000);
+    for(let i=0;i<count;i++){
+      nodes.push({
+        x: Math.random()*W, y: Math.random()*H,
+        vx:(Math.random()-.5)*.25, vy:(Math.random()-.5)*.25,
+        r: Math.random()*2+1,
+        gold: Math.random()>.75
+      });
+    }
+  }
+  initNodes();
+
+  let mx=W/2,my=H/2;
+  document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY});
+
+  const CONNECT_DIST = 120;
+  const MOUSE_DIST = 160;
+
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    // Update positions
+    nodes.forEach(n=>{
+      n.x+=n.vx; n.y+=n.vy;
+      if(n.x<0||n.x>W) n.vx*=-1;
+      if(n.y<0||n.y>H) n.vy*=-1;
+    });
+    // Draw connections
+    for(let i=0;i<nodes.length;i++){
+      for(let j=i+1;j<nodes.length;j++){
+        const dx=nodes[i].x-nodes[j].x, dy=nodes[i].y-nodes[j].y;
+        const d=Math.sqrt(dx*dx+dy*dy);
+        if(d<CONNECT_DIST){
+          const alpha=(1-d/CONNECT_DIST)*0.3;
+          ctx.globalAlpha=alpha;
+          ctx.strokeStyle='rgba(196,160,82,0.6)';
+          ctx.lineWidth=.5;
+          ctx.beginPath();
+          ctx.moveTo(nodes[i].x,nodes[i].y);
+          ctx.lineTo(nodes[j].x,nodes[j].y);
+          ctx.stroke();
+        }
+      }
+      // Mouse connections
+      const dx=nodes[i].x-mx, dy=nodes[i].y-my;
+      const d=Math.sqrt(dx*dx+dy*dy);
+      if(d<MOUSE_DIST){
+        const alpha=(1-d/MOUSE_DIST)*0.5;
+        ctx.globalAlpha=alpha;
+        ctx.strokeStyle='rgba(196,160,82,0.8)';
+        ctx.lineWidth=.7;
+        ctx.beginPath();
+        ctx.moveTo(nodes[i].x,nodes[i].y);
+        ctx.lineTo(mx,my);
+        ctx.stroke();
+      }
+    }
+    // Draw nodes
+    nodes.forEach(n=>{
+      ctx.globalAlpha = n.gold ? .7 : .35;
+      ctx.fillStyle = n.gold ? '#C4A052' : '#3A4560';
+      ctx.beginPath();
+      ctx.arc(n.x,n.y,n.r,0,Math.PI*2);
+      ctx.fill();
+    });
+    ctx.globalAlpha=1;
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+// ── SCROLL REVEAL ──
+const obs = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('vis'); });
+},{threshold:.01,rootMargin:'0px 0px -20px 0px'});
+document.querySelectorAll('.rv,.rv-l,.rv-r').forEach(el=>obs.observe(el));
+
+// ── PUBLICATION EXPAND ──
+function togglePub(id){
+  const item = document.getElementById(id);
+  item.classList.toggle('expanded');
+}
+
+// ── COUNTER (for future use) ──
+</script>
+</body>
+</html>
