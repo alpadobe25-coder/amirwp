@@ -80,7 +80,7 @@ nav{
   padding:.5rem .9rem;border-radius:var(--radius);
   transition:all .2s;
 }
-.nav-links a:hover,.nav-links a.active{color:var(--white);background:var(--ink3)}
+.nav-links a:hover,.nav-links a.active{color:var(--ink);background:var(--gold);border-radius:4px}
 .nav-links a.active{color:var(--gold)}
 .nav-cta{
   background:var(--gold)!important;
@@ -719,8 +719,7 @@ textarea.cf-input{resize:none;height:110px;line-height:1.7}
     <p>Advancing ethical frameworks for intelligent systems · <a href="mailto:info@amirrafiee.com.au" style="color:var(--gold);text-decoration:underline;transition:color .2s;" onmouseover="this.style.color='#e8c060'" onmouseout="this.style.color='var(--gold)'">info@amirrafiee.com.au</a></p>
   </div>
 </footer>
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 document.body.classList.add('js-ready');
 
 // Scroll reveal
@@ -730,25 +729,17 @@ const obs = new IntersectionObserver(entries=>{
 document.querySelectorAll('.rv,.rv-l,.rv-r').forEach(el=>obs.observe(el));
 
 // Topic tabs
-function selectTopic(el, val, val){
+function selectTopic(el, val){
   document.querySelectorAll('.topic-tab').forEach(function(t){t.classList.remove('selected');});
   el.classList.add('selected');
   document.getElementById('selected-topic').value = val;
 }
 
-// FAQ
+// FAQ accordion
 function toggleFaq(el){
   el.classList.toggle('open');
   var btn = el.querySelector('.faq-toggle');
   if(btn) btn.textContent = el.classList.contains('open') ? '\u2212' : '+';
-}
-
-// Form submit
-function submitForm(){
-  var form = document.getElementById('contact-form');
-  var success = document.getElementById('form-success');
-  if(form) form.style.display='none';
-  if(success) success.style.display='block';
 }
 </script>
 </body>
