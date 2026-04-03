@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Dr. Amir Rafiee | AI Ethics &amp; Governance Researcher</title>
+<meta name="description" content="Contact Dr. Amir Rafiee for research collaboration, speaking engagements, policy advice, or media enquiries on AI ethics and autonomous vehicles.">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'IBM Plex Sans',sans-serif;
+  background:#080C14;
+  color:#E8EDF5;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+
+:root{
+  --ink:#080C14;
+  --ink2:#0D1221;
+  --ink3:#141B2E;
+  --ink4:#1C2540;
+  --white:#E8EDF5;
+  --white2:#C8D0E0;
+  --grey:#7A8599;
+  --grey2:#3A4560;
+  --gold:#C4A052;
+  --gold2:#DFB96A;
+  --goldlo:rgba(196,160,82,0.08);
+  --goldlo2:rgba(196,160,82,0.15);
+  --teal:#2DD4BF;
+  --radius:6px;
+}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:500;
+  height:72px;display:flex;align-items:center;
+  justify-content:space-between;
+  padding:0 3.5rem;
+  background:rgba(8,12,20,0.97);
+  backdrop-filter:blur(20px);
+  border-bottom:1px solid rgba(196,160,82,0.15);
+}
+.nav-logo{
+  display:flex;align-items:center;gap:1rem;
+  overflow:hidden;height:72px;
+}
+.nav-monogram{
+  width:40px;height:40px;border-radius:50%;
+  background:var(--goldlo2);
+  border:1.5px solid rgba(196,160,82,0.3);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Libre Baskerville',serif;
+  font-size:1rem;font-weight:700;
+  color:var(--gold);
+  flex-shrink:0;
+}
+.nav-name{line-height:1.1}
+.nav-name-main{
+  font-family:'Libre Baskerville',serif;
+  font-size:.92rem;font-weight:700;
+  color:var(--white);letter-spacing:.01em;
+  display:block;
+}
+.nav-name-sub{
+  font-family:'IBM Plex Sans',sans-serif;
+  font-size:.52rem;font-weight:400;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--gold);
+  display:block;margin-top:.1rem;
+}
+.nav-links{display:flex;align-items:center;gap:.25rem}
+.nav-links a{
+  font-family:'IBM Plex Sans',sans-serif;
+  font-size:.72rem;font-weight:500;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--grey);
+  padding:.5rem .9rem;border-radius:var(--radius);
+  transition:all .2s;
+}
+.nav-links a:hover,.nav-links a.active{color:var(--ink);background:var(--gold);border-radius:4px}
+.nav-cta{
+  background:var(--gold)!important;
+  color:var(--ink)!important;
+  font-weight:600!important;
+  border-radius:var(--radius)!important;
+  padding:.5rem 1.4rem!important;
+  letter-spacing:.06em!important;
+}
+.nav-cta:hover{background:var(--gold2)!important}
+
+/* ── SHARED BUTTONS ── */
+.btn{
+  font-family:'IBM Plex Sans',sans-serif;
+  font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  padding:.85rem 2rem;border-radius:var(--radius);
+  display:inline-flex;align-items:center;gap:.5rem;
+  transition:all .22s;border:1.5px solid transparent;
+  cursor:pointer;
+}
+.btn-primary{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.btn-primary:hover{background:transparent;color:var(--gold)}
+.btn-ghost{background:transparent;color:var(--white);border-color:var(--grey2)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+
+/* ── SECTION LABEL ── */
+.sec-label{
+  font-family:'IBM Plex Sans',sans-serif;
+  font-size:.58rem;font-weight:600;letter-spacing:.3em;
+  text-transform:uppercase;color:var(--gold);
+  display:flex;align-items:center;gap:.6rem;
+  margin-bottom:1rem;
+}
+.sec-label::before{content:'';width:14px;height:1.5px;background:var(--gold)}
+
+/* ── FOOTER ── */
+footer{
+  background:var(--ink);
+  border-top:1px solid var(--ink4);
+  padding:4rem 3.5rem 2rem;
+}
+.ft-inner{
+  max-width:1160px;margin:0 auto;
+  display:grid;grid-template-columns:2fr 1fr 1fr 1fr;
+  gap:3rem;padding-bottom:2.5rem;
+  border-bottom:1px solid var(--ink4);
+}
+.ft-brand{
+  font-family:'Libre Baskerville',serif;
+  font-size:1.1rem;font-weight:700;color:var(--white);
+  margin-bottom:.5rem;
+  overflow:hidden;height:80px;display:flex;align-items:center;
+}
+.ft-brand small{
+  display:block;font-family:'IBM Plex Sans',sans-serif;
+  font-size:.52rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--gold);margin-top:.15rem;font-weight:400;
+}
+.ft-desc{font-size:.78rem;line-height:1.85;color:var(--grey);margin-bottom:1.25rem}
+.ft-links-row{display:flex;gap:.75rem;flex-wrap:wrap}
+.ft-link{
+  font-size:.68rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--grey);padding:.3rem .7rem;
+  border:1px solid var(--grey2);border-radius:3px;
+  transition:all .2s;
+}
+.ft-link:hover{color:var(--gold);border-color:var(--gold)}
+.ft-col h5{
+  font-family:'IBM Plex Sans',sans-serif;
+  font-size:.52rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--grey2);margin-bottom:.9rem;
+}
+.ft-col ul{list-style:none}
+.ft-col li{margin-bottom:.4rem}
+.ft-col a{font-size:.78rem;color:var(--grey);transition:color .18s}
+.ft-col a:hover{color:var(--gold)}
+.ft-bottom{
+  max-width:1160px;margin:1.5rem auto 0;
+  display:flex;justify-content:space-between;
+  align-items:center;flex-wrap:wrap;gap:.5rem;
+}
+.ft-bottom p{font-size:.62rem;color:var(--grey2);letter-spacing:.04em}
+.ft-bottom a{color:var(--grey2);transition:color .2s}
+.ft-bottom a:hover{color:var(--gold)}
+
+/* ── SCROLL REVEAL ── */
+.js-ready .rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+.js-ready .rv.vis{opacity:1;transform:none}
+.js-ready .rv-l{opacity:0;transform:translateX(-28px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+.js-ready .rv-l.vis{opacity:1;transform:none}
+.js-ready .rv-r{opacity:0;transform:translateX(28px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+.js-ready .rv-r.vis{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+.d4{transition-delay:.4s}.d5{transition-delay:.5s}.d6{transition-delay:.6s}
+
+/* ── CONTACT HERO ── */
+.contact-hero{
+  padding-top:72px;
+  background:var(--ink);
+  position:relative;overflow:hidden;
+  min-height:46vh;display:flex;align-items:center;
+}
+/* Radial gold glow */
+.contact-hero::before{
+  content:'';
+  position:absolute;left:-10%;top:-20%;
+  width:60vw;height:60vw;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(196,160,82,0.06) 0%,transparent 70%);
+  pointer-events:none;
+}
+.contact-hero::after{
+  content:'';
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(196,160,82,0.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(196,160,82,0.035) 1px,transparent 1px);
+  background-size:80px 80px;
+  pointer-events:none;z-index:0;
+}
+.contact-hero-inner{
+  max-width:1160px;margin:0 auto;
+  padding:5rem 3.5rem;
+  position:relative;z-index:1;
+  width:100%;
+}
+.contact-hero h1{
+  font-family:'Libre Baskerville',serif;
+  font-size:clamp(2.8rem,5vw,5rem);
+  line-height:1.0;letter-spacing:-.03em;
+  color:var(--white);margin-bottom:.75rem;
+  opacity:0;animation:fadeUp .8s .2s ease forwards;
+}
+.contact-hero h1 em{font-style:italic;color:var(--gold)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.contact-hero-sub{
+  font-size:.95rem;font-weight:300;line-height:1.9;
+  color:var(--grey);max-width:620px;
+  opacity:0;animation:fadeUp .8s .4s ease forwards;
+}
+.contact-hero-sub strong{color:var(--white2);font-weight:500}
+
+/* ── CONTACT MAIN ── */
+.contact-main{
+  padding:6rem 3.5rem;
+  background:var(--ink2);
+  border-top:1px solid var(--ink4);
+}
+.contact-main-inner{
+  max-width:1160px;margin:0 auto;
+  display:grid;grid-template-columns:1fr 1.1fr;
+  gap:5rem;align-items:start;
+}
+
+/* LEFT: info side */
+.contact-info-panel{}
+.contact-info-panel h2{
+  font-family:'Libre Baskerville',serif;
+  font-size:clamp(1.6rem,2.5vw,2.5rem);
+  line-height:1.1;color:var(--white);margin-bottom:1rem;
+}
+.contact-info-panel h2 em{font-style:italic;color:var(--gold)}
+.contact-info-panel > p{
+  font-size:.88rem;line-height:1.95;color:var(--grey);margin-bottom:2.5rem;
+}
+
+.ci-block{
+  display:flex;flex-direction:column;gap:.75rem;
+  margin-bottom:2.5rem;
+}
+.ci-row{
+  display:flex;align-items:flex-start;gap:1rem;
+  padding:1rem 1.25rem;
+  background:var(--ink);border:1px solid var(--ink4);
+  border-radius:6px;
+  transition:border-color .2s;
+}
+.ci-row:hover{border-color:rgba(196,160,82,.25)}
+.ci-icon-box{
+  width:38px;height:38px;border-radius:6px;
+  background:var(--goldlo);border:1px solid rgba(196,160,82,.2);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1rem;flex-shrink:0;
+}
+.ci-text{}
+.ci-label{
+  font-family:'IBM Plex Sans',sans-serif;
+  font-size:.55rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--grey2);margin-bottom:.2rem;
+}
+.ci-value{
+  font-size:.84rem;font-weight:500;color:var(--white2);line-height:1.5;
+}
+.ci-value a{color:var(--white2);transition:color .2s}
+.ci-value a:hover{color:var(--gold)}
+
+/* Topics cards */
+.topics h3{
+  font-family:'IBM Plex Sans',sans-serif;font-weight:600;
+  font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;
+  color:var(--grey2);margin-bottom:1rem;
+}
+.topics-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:.65rem;
+}
+.topic-card{
+  background:var(--ink);border:1px solid var(--ink4);
+  border-radius:6px;padding:1rem 1.1rem;
+  transition:border-color .25s,background .25s;
+  cursor:default;
+}
+.topic-card:hover{border-color:rgba(196,160,82,.3);background:var(--ink2)}
+.tc-icon{font-size:1.1rem;margin-bottom:.4rem}
+.tc-name{
+  font-family:'Libre Baskerville',serif;font-weight:700;
+  font-size:.82rem;color:var(--white);margin-bottom:.25rem;
+}
+.tc-desc{font-size:.68rem;line-height:1.7;color:var(--grey)}
+
+/* RIGHT: Form */
+.contact-form-panel{
+  background:var(--ink);
+  border:1px solid var(--ink4);
+  border-radius:10px;padding:2.5rem;
+  position:sticky;top:90px;
+  position:relative;overflow:hidden;
+}
+.contact-form-panel::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--gold),var(--gold2),transparent);
+}
+.contact-form-panel h3{
+  font-family:'Libre Baskerville',serif;font-weight:700;
+  font-size:1.4rem;color:var(--white);margin-bottom:.3rem;
+}
+.contact-form-panel > p{
+  font-size:.78rem;color:var(--grey);margin-bottom:1.75rem;line-height:1.7;
+}
+
+/* Topic selector tabs */
+.topic-tabs{
+  display:grid;grid-template-columns:1fr 1fr;gap:.4rem;
+  margin-bottom:1.5rem;
+}
+.topic-tab{
+  background:var(--ink2);border:1px solid var(--ink4);
+  border-radius:4px;padding:.55rem .75rem;
+  font-family:'IBM Plex Sans',sans-serif;
+  font-size:.62rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--grey);cursor:pointer;
+  transition:all .2s;text-align:center;
+  user-select:none;
+}
+.topic-tab:hover{border-color:rgba(196,160,82,.3);color:var(--white2)}
+.topic-tab.selected{
+  background:var(--goldlo);
+  border-color:rgba(196,160,82,.35);
+  color:var(--gold);
+}
+
+.cf-form{display:flex;flex-direction:column;gap:.65rem}
+.cf-row{display:grid;grid-template-columns:1fr 1fr;gap:.65rem}
+.cf-field{display:flex;flex-direction:column;gap:.3rem}
+.cf-label{
+  font-size:.55rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--grey2);
+}
+.cf-input{
+  width:100%;background:var(--ink2);
+  border:1px solid var(--ink4);
+  border-radius:4px;padding:.8rem 1rem;
+  font-family:'IBM Plex Sans',sans-serif;font-size:.82rem;
+  color:var(--white);outline:none;
+  transition:border .2s,background .2s;
+  -webkit-appearance:none;
+}
+.cf-input::placeholder{color:var(--grey2)}
+.cf-input:focus{border-color:rgba(196,160,82,.4);background:var(--ink3)}
+textarea.cf-input{resize:none;height:110px;line-height:1.7}
+.cf-hint{font-size:.62rem;color:var(--grey2);margin-top:.15rem}
+
+#form-success{
+  display:none;
+  text-align:center;padding:2rem;
+}
+#form-success h4{
+  font-family:'Libre Baskerville',serif;font-weight:700;
+  font-size:1.2rem;color:var(--gold);margin-bottom:.5rem;
+}
+#form-success p{font-size:.82rem;color:var(--grey);line-height:1.75}
+
+/* ── FAQ / WHAT TO EXPECT ── */
+.faq{
+  padding:6rem 3.5rem;
+  background:var(--ink);
+  border-top:1px solid var(--ink4);
+}
+.faq-inner{max-width:1160px;margin:0 auto}
+.faq-head{
+  display:grid;grid-template-columns:1fr 1fr;gap:4rem;
+  align-items:end;margin-bottom:4rem;
+}
+.faq-head h2{
+  font-family:'Libre Baskerville',serif;
+  font-size:clamp(1.8rem,2.5vw,2.8rem);
+  line-height:1.1;color:var(--white);
+}
+.faq-head h2 em{font-style:italic;color:var(--gold)}
+.faq-head p{font-size:.88rem;line-height:1.95;color:var(--grey)}
+
+.faq-list{display:flex;flex-direction:column;gap:0}
+.faq-item{
+  border-top:1px solid var(--ink4);
+  padding:1.5rem 0;
+}
+.faq-item:last-child{border-bottom:1px solid var(--ink4)}
+.faq-q{
+  display:flex;align-items:center;justify-content:space-between;
+  cursor:pointer;gap:1rem;
+}
+.faq-q-text{
+  font-family:'Libre Baskerville',serif;font-weight:700;
+  font-size:.95rem;color:var(--white);line-height:1.35;
+  transition:color .2s;
+}
+.faq-q:hover .faq-q-text{color:var(--gold)}
+.faq-toggle{
+  width:32px;height:32px;border-radius:50%;
+  border:1px solid var(--ink4);
+  background:transparent;color:var(--grey);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.85rem;cursor:pointer;flex-shrink:0;
+  transition:all .2s;
+}
+.faq-item.open .faq-toggle{
+  background:var(--gold);border-color:var(--gold);
+  color:var(--ink);transform:rotate(45deg);
+}
+.faq-a{
+  font-size:.85rem;line-height:1.9;color:var(--grey);
+  max-height:0;overflow:hidden;opacity:0;
+  transition:max-height .45s ease,opacity .4s,padding .35s;
+}
+.faq-item.open .faq-a{
+  max-height:250px;opacity:1;padding-top:.85rem;
+}
+
+/* ── SOCIAL PROOF / FEATURED ── */
+.featured{
+  padding:5rem 3.5rem;
+  background:var(--ink2);
+  border-top:1px solid var(--ink4);
+}
+.featured-inner{
+  max-width:1160px;margin:0 auto;text-align:center;
+}
+.featured-inner h3{
+  font-family:'IBM Plex Sans',sans-serif;font-weight:600;
+  font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--grey2);margin-bottom:2rem;
+}
+.featured-row{
+  display:flex;align-items:center;justify-content:center;
+  gap:2rem;flex-wrap:wrap;
+}
+.feat-pill{
+  display:inline-flex;align-items:center;gap:.5rem;
+  border:1px solid var(--ink4);
+  border-radius:30px;padding:.5rem 1.25rem;
+  font-family:'IBM Plex Sans',sans-serif;
+  font-size:.72rem;font-weight:500;color:var(--grey);
+  background:var(--ink);
+  transition:all .2s;
+}
+.feat-pill:hover{border-color:rgba(196,160,82,.3);color:var(--white2)}
+.feat-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .contact-main-inner{grid-template-columns:1fr;gap:3.5rem}
+  .contact-form-panel{position:static}
+  .faq-head{grid-template-columns:1fr;gap:2rem}
+}
+@media(max-width:640px){
+  nav{padding:0 1.25rem}
+  .nav-links a:not(.nav-cta){display:none}
+  .contact-hero-inner,.contact-main,.faq,.featured{padding-left:1.5rem;padding-right:1.5rem}
+  .contact-hero-inner{padding-top:5rem}
+  .contact-hero h1{font-size:clamp(2.4rem,9vw,3.5rem)}
+  .topics-grid{grid-template-columns:1fr}
+  .cf-row{grid-template-columns:1fr}
+  .topic-tabs{grid-template-columns:1fr 1fr}
+  .ft-inner{grid-template-columns:1fr}
+  footer{padding:3rem 1.5rem 1.5rem}
+}
+.social-icons-row{display:flex;align-items:center;gap:.85rem;margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--ink4);}
+.soc-icon{width:40px;height:40px;border-radius:8px;background:var(--ink3);border:1px solid var(--ink4);display:flex;align-items:center;justify-content:center;color:var(--grey);transition:all .22s;text-decoration:none;flex-shrink:0;}
+.soc-icon:hover{background:var(--ink4);color:var(--gold);border-color:rgba(196,160,82,.3)}
+.soc-icon svg{width:18px;height:18px;flex-shrink:0}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <img src="Logo.png" alt="Dr. Amir Rafiee" style="height:180px;width:auto;flex-shrink:0;">
+  </div>
+  <div class="nav-links">
+    <a href="amir-home.html">Home</a>
+    <a href="amir-home.html#research">Research</a>
+    <a href="amir-home.html#publications">Publications</a>
+    <a href="amir-about.html">About</a>
+    <a href="amir-contact.html" class="nav-cta active">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="contact-hero">
+  <div class="contact-hero-inner">
+    <div class="sec-label" style="margin-bottom:1rem;opacity:0;animation:fadeUp .7s .1s ease forwards">Get in Touch</div>
+    <h1>Let's Build<br><em>Ethical AI</em><br>Together.</h1>
+    <p class="contact-hero-sub">
+      Whether you're a <strong>government agency</strong>, automotive manufacturer, university, or technology company — Amir welcomes conversations about research collaboration, policy development, speaking engagements, and responsible AI design.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT MAIN -->
+<section class="contact-main">
+  <div class="contact-main-inner">
+
+    <!-- INFO PANEL -->
+    <div class="contact-info-panel">
+      <div class="sec-label rv">Direct Contact</div>
+      <h2 class="rv d1">Reach <em>Amir</em><br>Directly</h2>
+      <p class="rv d2">All enquiries are read personally. Amir aims to respond within 1–2 business days. Selected publications available on Google Scholar. For urgent academic or media enquiries please use the contact form or email <a href="mailto:info@amirrafiee.com.au" style="color:var(--gold);text-decoration:underline;transition:color .2s;" onmouseover="this.style.color='#e8c060'" onmouseout="this.style.color='var(--gold)'">info@amirrafiee.com.au</a></p>
+
+      <div class="ci-block rv d2">
+        <div class="social-icons-row" style="margin-top:0;padding-top:0;border-top:none;">
+          <a href="https://www.linkedin.com/in/amir-rafiee-phd-82805857" target="_blank" class="soc-icon" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <a href="https://scholar.google.com/citations?user=zBHjLMwAAAAJ" target="_blank" class="soc-icon" title="Google Scholar" aria-label="Google Scholar"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 100 14 7 7 0 000-14z"/></svg></a>
+          <a href="https://orcid.org/0000-0002-8149-4780" target="_blank" class="soc-icon" title="ORCID" aria-label="ORCID"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 01-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.016-5.325 5.016h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z"/></svg></a>
+        </div>
+      </div>
+
+      <!-- WHAT AMIR<!-- WHAT AMIR<!-- WHAT AMIR WORKS ON -->
+      <div class="topics rv d3">
+        <h3>Enquiry Topics</h3>
+        <div class="topics-grid">
+          <div class="topic-card">
+            <div class="tc-icon">🤝</div>
+            <div class="tc-name">Research Collaboration</div>
+            <div class="tc-desc">Joint projects on AV ethics, AI governance, or responsible design frameworks.</div>
+          </div>
+          <div class="topic-card">
+            <div class="tc-icon">🎤</div>
+            <div class="tc-name">Speaking Engagements</div>
+            <div class="tc-desc">Conferences, panels, podcasts, and university guest lectures on AI ethics.</div>
+          </div>
+          <div class="topic-card">
+            <div class="tc-icon">⚖️</div>
+            <div class="tc-name">Policy Advice</div>
+            <div class="tc-desc">Government agencies and regulators developing AV safety and ethics frameworks.</div>
+          </div>
+          <div class="topic-card">
+            <div class="tc-icon">📰</div>
+            <div class="tc-name">Media Enquiries</div>
+            <div class="tc-desc">Journalist and media requests for expert commentary on autonomous vehicle ethics.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FORM PANEL -->
+    <div class="contact-form-panel rv-r">
+      <h3>Send an Enquiry</h3>
+      <p>Please provide a brief overview of your enquiry, including relevant details such as timelines, context, and objectives.</p>
+
+      <!-- Topic selector -->
+      <div class="topic-tabs">
+        <div class="topic-tab selected" onclick="selectTopic(this,'Collaboration')">🤝 Collaboration</div>
+        <div class="topic-tab" onclick="selectTopic(this,'Speaking')">🎤 Speaking</div>
+        <div class="topic-tab" onclick="selectTopic(this,'Policy Advice')">⚖️ Policy</div>
+        <div class="topic-tab" onclick="selectTopic(this,'Media')">📰 Media</div>
+      </div>
+      <input type="hidden" id="selected-topic" value="Collaboration">
+
+      <div class="cf-form" id="contact-form">
+        <div class="cf-row">
+          <div class="cf-field">
+            <label class="cf-label">First Name</label>
+            <input type="text" class="cf-input" placeholder="Jane" id="f-fname">
+          </div>
+          <div class="cf-field">
+            <label class="cf-label">Last Name</label>
+            <input type="text" class="cf-input" placeholder="Smith" id="f-lname">
+          </div>
+        </div>
+        <div class="cf-field">
+          <label class="cf-label">Email Address</label>
+          <input type="email" class="cf-input" placeholder="jane@organisation.com.au" id="f-email">
+        </div>
+        <div class="cf-field">
+          <label class="cf-label">Organisation (optional)</label>
+          <input type="text" class="cf-input" placeholder="University / Government / Company" id="f-org">
+        </div>
+        <div class="cf-field">
+          <label class="cf-label">Message</label>
+          <textarea class="cf-input" placeholder="Tell Amir about your project, question, or enquiry…" id="f-msg"></textarea>
+          <span class="cf-hint">Please include any relevant context — institution, project, or publication you're referencing.</span>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="submitForm()" style="width:100%;justify-content:center;border-radius:4px">
+          Send Enquiry →
+        </button>
+      </div>
+
+      <div id="form-success">
+        <div style="font-size:2rem;margin-bottom:.75rem">✅</div>
+        <h4>Message Received</h4>
+        <p>Thank you for reaching out. Amir will review your enquiry and respond personally within one to two business days.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="faq-inner">
+    <div class="faq-head">
+      <div>
+        <div class="sec-label rv">FAQ</div>
+        <h2 class="rv d1">Common <em>Questions</em></h2>
+      </div>
+      <p class="rv d2">Answers to the questions Amir gets asked most often — from collaborators, journalists, students and policymakers.</p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item rv" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <span class="faq-q-text">Are you available for speaking engagements?</span>
+          <button class="faq-toggle">+</button>
+        </div>
+        <div class="faq-a">Yes, I regularly contribute to conferences, panels, and workshops focused on AI ethics, governance, and autonomous systems. Please include event details, audience, and format in your enquiry.</div>
+      </div>
+      <div class="faq-item rv d1" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <span class="faq-q-text">Can you collaborate on research projects?</span>
+          <button class="faq-toggle">+</button>
+        </div>
+        <div class="faq-a">I welcome research collaborations aligned with my areas of expertise. Please include details of the project scope, objectives, and expected contributions.</div>
+      </div>
+      <div class="faq-item rv d2" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <span class="faq-q-text">Do you work with policymakers and regulators?</span>
+          <button class="faq-toggle">+</button>
+        </div>
+        <div class="faq-a">Yes. My research focuses on the intersection of ethical theory and practical regulatory frameworks. I engage with policy discussions relating to autonomous systems, safety standards, and ethical implementation.</div>
+      </div>
+      <div class="faq-item rv d2" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <span class="faq-q-text">Do you work with students and early career researchers?</span>
+          <button class="faq-toggle">+</button>
+        </div>
+        <div class="faq-a">Yes, I enjoy supporting emerging researchers in AI ethics and autonomous systems. Whether you're looking for guidance on your thesis, a reading list, or general career advice, feel free to send a message. Response time may be slower for informal academic mentoring, but I will reply to genuine enquiries.</div>
+      </div>
+      <div class="faq-item rv d3" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          <span class="faq-q-text">Do you provide consulting or advisory services?</span>
+          <button class="faq-toggle">+</button>
+        </div>
+        <div class="faq-a">I am open to advisory engagements that align with my research focus, particularly where ethical frameworks can be applied to real-world systems.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED IN -->
+<section class="featured">
+  <div class="featured-inner rv">
+    <h3>Research Featured In / Presented At</h3>
+    <div class="featured-row">
+      <div class="feat-pill"><div class="feat-dot"></div>ICAART 2025 · Prague</div>
+      <div class="feat-pill"><div class="feat-dot"></div>ICAART 2024 · Rome</div>
+      <div class="feat-pill"><div class="feat-dot"></div>CEPE 2023</div>
+      <div class="feat-pill"><div class="feat-dot"></div>Emerald Publishing · Vol. 27</div>
+      <div class="feat-pill"><div class="feat-dot"></div>Griffith University · ICT</div>
+      <div class="feat-pill"><div class="feat-dot"></div>SCITEPRESS Open Access</div>
+      <div class="feat-pill"><div class="feat-dot"></div>ICAART 2026 · Forthcoming</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-inner">
+    <div>
+      <div class="ft-brand">Dr. Amir Rafiee <small>AI Ethics &amp; Governance Researcher</small></div>
+      <p class="ft-desc">Sydney-based researcher exploring how ethical theory, public expectations, and smart policy can guide autonomous vehicles through life-or-death decisions.</p>
+      <div class="ft-links-row">
+        <a href="https://scholar.google.com/citations?user=zBHjLMwAAAAJ" target="_blank" class="ft-link">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/amir-rafiee-phd-82805857" target="_blank" class="ft-link">LinkedIn</a>
+        <a href="https://orcid.org/0000-0002-8149-4780" target="_blank" class="ft-link">ORCID</a>
+      </div>
+    </div>
+    <div class="ft-col">
+      <h5>Research</h5>
+      <ul>
+        <li><a href="amir-home.html#research">Research Interests</a></li>
+        <li><a href="amir-home.html#publications">Publications</a></li>
+        <li><a href="amir-home.html#thesis">PhD Thesis</a></li>
+        <li><a href="amir-home.html#impact">Policy Principles</a></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h5>Conferences</h5>
+      <ul>
+        <li><a href="#">ICAART 2026</a></li>
+        <li><a href="#">ICAART 2025</a></li>
+        <li><a href="#">ICAART 2024</a></li>
+        <li><a href="#">CEPE 2023</a></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h5>Navigation</h5>
+      <ul>
+        <li><a href="amir-home.html">Home</a></li>
+        <li><a href="amir-about.html">About</a></li>
+        <li><a href="amir-contact.html">Contact</a></li>
+        <li><a href="mailto:info@amirrafiee.com.au" style="color:var(--gold);text-decoration:underline;transition:color .2s;" onmouseover="this.style.color='#e8c060'" onmouseout="this.style.color='var(--gold)'">info@amirrafiee.com.au</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <p>© 2026 Amir Rafiee</p>
+    <p>Advancing ethical frameworks for intelligent systems · <a href="mailto:info@amirrafiee.com.au" style="color:var(--gold);text-decoration:underline;transition:color .2s;" onmouseover="this.style.color='#e8c060'" onmouseout="this.style.color='var(--gold)'">info@amirrafiee.com.au</a></p>
+  </div>
+</footer>
+<script>
+document.body.classList.add('js-ready');
+
+// Scroll reveal
+const obs = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('vis'); });
+},{threshold:.01,rootMargin:'0px 0px -20px 0px'});
+document.querySelectorAll('.rv,.rv-l,.rv-r').forEach(el=>obs.observe(el));
+
+// Topic tabs
+function selectTopic(el, val){
+  document.querySelectorAll('.topic-tab').forEach(function(t){t.classList.remove('selected');});
+  el.classList.add('selected');
+  document.getElementById('selected-topic').value = val;
+}
+
+// FAQ accordion
+function toggleFaq(el){
+  el.classList.toggle('open');
+  var btn = el.querySelector('.faq-toggle');
+  if(btn) btn.textContent = el.classList.contains('open') ? '\u2212' : '+';
+}
+</script>
+</body>
+</html>
